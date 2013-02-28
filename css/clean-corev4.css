@@ -1,0 +1,147 @@
+/* _lcid="1033" _version="14.0.4762" _LocalBinding */
+@charset "UTF-8";
+body,
+form {
+  margin: 0;
+}
+.clean .ms-toolbar {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  text-decoration: none;
+  color: #951716;
+}
+.clean .ms-toolbar.table {
+  height: 45px;
+  border: none;
+  background: url("/layouts/images/bgximg.png") repeat-x 0px -610px;
+  background-color: #ffffff;
+  border: 1px solid #f1f1f2;
+}
+.clean a.ms-toolbar:hover {
+  text-decoration: underline;
+  color: #69100f;
+}
+.clean .ms-toolbar-togglebutton-on {
+  border: 1px solid #a60605;
+  background-color: #fffacc;
+}
+.clean .ms-menutoolbar {
+  height: 45px;
+  border: none;
+  background: url("/layouts/images/bgximg.png") repeat-x 0px -610px;
+  background-color: #ffffff;
+  border: 1px solid #f1f1f2;
+}
+.clean .ms-menutoolbar td {
+  padding: 0px 0px 0px 4px;
+  margin: 0px;
+  border: none;
+}
+.clean .ms-menutoolbar td a {
+  color: #951716;
+  font-size: 13px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.clean .ms-menutoolbar td a:hover {
+  color: #69100f;
+  text-decoration: none;
+}
+.clean .ms-menubuttoninactivehover,
+.clean .ms-buttoninactivehover {
+  margin: 3px;
+  padding: 3px 4px 4px 4px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  white-space: nowrap;
+}
+.clean .ms-buttoninactivehover {
+  white-space: nowrap;
+}
+.clean .ms-menubuttonactivehover,
+.clean .ms-buttonactivehover {
+  margin: 3px;
+  padding: 3px 4px 4px 4px;
+  background: url("/layouts/images/bgximg.png") repeat-x 0px -431px;
+  background-color: #ffffff;
+  border: solid 1px #cccccc;
+  cursor: pointer;
+}
+.clean .ms-buttoninactivehover img,
+.clean .ms-buttonactivehover img {
+  margin: 0px 1px 0px 0px;
+}
+.clean .ms-listheaderlabel {
+  color: #69100f;
+}
+.clean .ms-listheaderlabel,
+.clean .ms-viewselector,
+.clean .ms-viewselectortext,
+.clean .ms-viewselectorhover {
+  font-size: 13px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.clean td.ms-viewselector {
+  background-color: #ffffff;
+  border: 1px solid #a8abae;
+  padding: 0px;
+}
+.clean td.ms-menutoolbarheader {
+  font-size: 16px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #69100f;
+  font-weight: bold;
+  line-height: 20px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.clean .ms-menutoolbar td td.ms-viewselector,
+.clean .ms-toolbar td td.ms-viewselector,
+.clean .ms-menutoolbar td td.ms-viewselectorhover,
+.clean .ms-toolbar td td.ms-viewselectorhover {
+  background-color: #ffffff;
+  border: 1px solid #a8abae;
+  padding: 0px;
+}
+.clean .ms-menutoolbar td td.ms-viewselectorhover,
+.clean .ms-toolbar td td.ms-viewselectorhover {
+  background: url("/layouts/images/bgximg.png") repeat-x 0px -654px;
+  border-color: #d47070;
+  background-color: #e09797;
+}
+.clean .ms-menutoolbar td td {
+  border: none;
+}
+.clean div.ms-viewselector,
+.clean div.ms-viewselectorhover {
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.clean div.ms-viewselector a {
+  color: #3c0909;
+}
+.clean div.ms-viewselectorhover a.ms-menu-a span {
+  color: #3c0909;
+}
+.clean .ms-bottompaging {
+  background: #f3ebea;
+}
+.clean .ms-bottompaging .ms-vb {
+  background-color: #ffffff;
+}
+.clean .ms-bottompagingline1 {
+  height: 3px;
+  background-color: #ffffff;
+}
+.clean .ms-bottompagingline2,
+.clean .ms-bottompagingline3 {
+  height: 1px;
+  background-color: #ffffff;
+}
+.clean .ms-bottompagingline2 img,
+.clean .ms-bottompagingline3 img {
+  display: none;
+}
+.clean .ms-partline img {
+  display: none;
+}
