@@ -1,0 +1,217 @@
+//
+// User: Marcello Pabst
+// Date: 28.02.13
+// Time: 19:28
+//
+/* _lcid="1033" _version="14.0.4762" _LocalBinding */
+@charset "UTF-8";
+
+// Colors
+//@linkBaseColor: #0072BC;
+@linkBaseColor: #951716;
+@highlightColor1: #fffacc;
+
+@bgColorLight: #fff;
+
+@borderLight: #f1f1f2;
+@borderMedium: #ccc;
+// Fonts
+@fontFamilyPrimary: Verdana, Arial, Helvetica, sans-serif;
+@fontFamilySecondary: Arial, Helvetica, sans-serif;
+
+// Sizes
+@baseFontSize: 13px;
+
+// Images
+@bgximg: "/layouts/images/bgximg.png";
+
+body, form {
+	margin: 0;
+}
+
+.clean {
+	.ms-toolbar {
+		font-family: @fontFamilyPrimary;
+		font-size: @baseFontSize;
+		text-decoration: none;
+		color: @linkBaseColor;
+
+		&.table {
+			.toolbar;
+		}
+	}
+
+	a {
+		&.ms-toolbar {
+			&:hover {
+				text-decoration: underline;
+				color: darken(@linkBaseColor, 10%);
+			}
+		}
+	}
+
+	.ms-toolbar-togglebutton-on {
+		border: 1px solid saturate(@linkBaseColor, 20%);
+		background-color: @highlightColor1;
+	}
+
+	.ms-menutoolbar {
+		.toolbar;
+
+		td {
+			padding: 0px 0px 0px 4px;
+			margin: 0px;
+			border: none;
+
+			a {
+				color: @linkBaseColor;
+				font-size: @baseFontSize;
+				font-family: @fontFamilyPrimary;
+				text-decoration: none;
+
+				&:hover {
+					color: darken(@linkBaseColor, 10%);
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.ms-menubuttoninactivehover, .ms-buttoninactivehover {
+		margin: 3px;
+		padding: 3px 4px 4px 4px;
+		border: 1px solid transparent;
+		background-color: transparent;
+		white-space: nowrap;
+	}
+
+	.ms-buttoninactivehover {
+		white-space: nowrap;
+	}
+
+	.ms-menubuttonactivehover, .ms-buttonactivehover {
+		margin: 3px;
+		padding: 3px 4px 4px 4px;
+		background: url(@bgximg) repeat-x -0px -431px;
+		background-color: @bgColorLight;
+		border: solid 1px @borderMedium;
+		cursor: pointer;
+	}
+
+	.ms-buttoninactivehover, .ms-buttonactivehover {
+		img {
+			margin: 0px 1px 0px 0px;
+		}
+	}
+
+	.ms-listheaderlabel {
+		color: darken(@linkBaseColor, 10%);
+	}
+
+	.ms-listheaderlabel, .ms-viewselector, .ms-viewselectortext, .ms-viewselectorhover {
+		font-size: @baseFontSize;
+		font-family: @fontFamilyPrimary;
+	}
+
+	td {
+		&.ms-viewselector {
+
+			background-color: #ffffff;
+			border: 1px solid #a8abae;
+			padding: 0px;
+		}
+
+		&.ms-menutoolbarheader {
+			@fontSize: round(@baseFontSize*1.25);
+			font-size: @fontSize;
+			font-family: @fontFamilyPrimary;
+			color: darken(@linkBaseColor, 10%);
+			font-weight: bold;
+			line-height: round(@fontSize*1.25);
+			padding-left: 7px;
+			padding-right: 7px;
+		}
+	}
+
+	.ms-menutoolbar, .ms-toolbar {
+		td {
+			td {
+				&.ms-viewselector, &.ms-viewselectorhover {
+					background-color: #ffffff;
+					border: 1px solid #a8abae;
+					padding: 0px;
+				}
+
+				&.ms-viewselectorhover {
+					background: url(@bgximg) repeat-x -0px -654px;
+					@localColor: desaturate(lighten(@linkBaseColor, 30%), 20%);
+					border-color: @localColor;
+					background-color: lighten(@localColor, 10%);
+				}
+			}
+
+		}
+	}
+
+	.ms-menutoolbar {
+		td {
+			td {
+				border: none;
+			}
+		}
+	}
+
+	div {
+		&.ms-viewselector, &.ms-viewselectorhover {
+			padding: 4px 8px;
+			cursor: pointer;
+		}
+
+		&.ms-viewselector a {
+			color: darken(@linkBaseColor, 20%);
+		}
+
+		&.ms-viewselectorhover a {
+			&.ms-menu-a {
+				span {
+					color: darken(@linkBaseColor, 20%);
+				}
+			}
+		}
+	}
+
+	.ms-bottompaging {
+		background: desaturate(lighten(@linkBaseColor, 60%), 50%);
+
+		.ms-vb {
+			background-color: @bgColorLight;
+		}
+	}
+
+	.ms-bottompagingline1 {
+		height: 3px;
+		background-color: @bgColorLight;
+	}
+
+	.ms-bottompagingline2, .ms-bottompagingline3 {
+		height: 1px;
+		background-color: @bgColorLight;
+		img {
+			display: none;
+		}
+	}
+
+	.ms-partline {
+		img {
+			display: none;
+		}
+	}
+}
+
+.toolbar() {
+	height: 45px;
+	border: none;
+	background: url(@bgximg) repeat-x -0px -610px;
+	background-color: @bgColorLight;
+	border: 1px solid @borderLight;
+}
